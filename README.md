@@ -14,7 +14,7 @@
   </a>
 </div>
 
-<br><br><br><br><br>
+<br><br><br><br><br><br><br>
 
 ### ✦ Tech Stack
 
@@ -26,7 +26,10 @@
  <!-- <img src="https://api.iconify.design/svg-spinners:bars-scale-fade.svg?color=%239FA9DA" width="20" align="middle" /> -->
 </div>
 
-<br><br>
+<br><br><br>
+<div align="center">
+  <img src="cyber-grid.svg" width="100%" alt="Data Grid Divider">
+</div>
 
 ### ✦ Metrics
 
@@ -40,6 +43,10 @@
 </div>
 
 <br>
+<br>
+<div align="center">
+  <img src="cyber-grid.svg" width="100%" alt="Data Grid Divider">
+</div>
 
 ### ✦ Commits
 
