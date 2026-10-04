@@ -16,7 +16,7 @@
 
 <div align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=py,js,html,css,django,qt,git,github,linux,vim,vscode&theme=dark&perline=11" alt="Tech Stack" />
+    <img src="https://skillicons.dev/icons?i=py,js,html,css,django,git,github,linux,vim,vscode&theme=dark&perline=11" alt="Tech Stack" />
   </a>
 </div>
 
@@ -32,7 +32,7 @@
 <br>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=kushalarvindo&theme=transparent&hide_border=true&title_color=9FA9DA&text_color=8F96BF&icon_color=9FA9DA&date_format=j%20M%5B%20Y%5D" width="100%" alt="GitHub Streak">
+  <img src="https://streak-stats.demolab.com?user=kushalarvindo&theme=transparent&hide_border=true&ring=9FA9DA&fire=9FA9DA&currStreakNum=9FA9DA&sideNums=9FA9DA&currStreakLabel=9FA9DA&sideLabels=9FA9DA&dates=8F96BF&date_format=j%20M%5B%20Y%5D" width="100%" alt="GitHub Streak">
 </div>
 
 <br>
@@ -47,5 +47,8 @@
   </picture>
 </div>
 
-<!-- The Animated Fluid Wave Footer -->
+<!--<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=kushalarvindo&label=Profile%20Views&color=9FA9DA&style=flat" alt="Profile Views" />
+</div>-->
+
 <img src="https://capsule-render.vercel.app/api?type=waving&color=9FA9DA&height=100&section=footer" width="100%"/>
