@@ -2,16 +2,16 @@
 <br>
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://api.iconify.design/svg-spinners:pulse-rings-multiple.svg?color=%239FA9DA" width="38" align="left" />
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=400&size=20&pause=1500&color=9FA9DA&width=420&lines=🌠+Hello+there+👋;🌌+I'm+Kushal!!;✨+How+are+you+doing?;☕+Wanna+Grab+a+Drink?" alt="Typing SVG" align="left" />
+    <img src="https://api.iconify.design/svg-spinners:pulse-rings-multiple.svg?color=%239FA9DA" width="34" align="left" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=400&size=30&pause=1750&color=9FA9DA&width=420&lines=🌠+Hello+there+👋;🌌+I'm+Kushal!!;✨+How+are+you+doing?;☕+Wanna+Grab+a+Drink?" alt="Typing SVG" align="left" />
   </a>
   <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
   <a href="https://open.spotify.com/">
-    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31hhbckcnadnsrpkfdn2p7dmqiua&cover_image=true&theme=novatorem&bar_color=9FA9DA&background_color=00000000&show_offline=true" width="320" alt="Spotify Now Playing" align="right">
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31hhbckcnadnsrpkfdn2p7dmqiua&cover_image=true&theme=novatorem&bar_color=9FA9DA&background_color=00000000&show_offline=false" width="320" alt="Spotify Now Playing" align="right">
   </a>
 </div>
 
-<br><br><br><br><br><br><br>
+<br><br><br><br><br>
 
 ### ✦ Tech Stack
 
@@ -19,6 +19,8 @@
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=java,kotlin,androidstudio,figma,py,html,css,github,linux,c,vscode&theme=dark&perline=11" alt="Tech Stack" />
   </a>
+  <br>
+  <img src="https://api.iconify.design/svg-spinners:bars-scale-fade.svg?color=%239FA9DA" width="20" align="middle" />
 </div>
 
 <br><br>
@@ -49,5 +51,6 @@
 <!--<div align="center">
   <img src="https://komarev.com/ghpvc/?username=kushalarvindo&label=Profile%20Views&color=9FA9DA&style=flat" alt="Profile Views" />
 </div>-->
+<br>
 <br>
 <img src="https://capsule-render.vercel.app/api?type=waving&color=9FA9DA&height=100&section=footer" width="100%"/>
