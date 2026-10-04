@@ -60,6 +60,15 @@
   <img src="https://komarev.com/ghpvc/?username=kushalarvindo&label=Profile%20Views&color=9FA9DA&style=flat" alt="Profile Views" />
 </div>-->
 <br>
-
+<!-- 
+  [+] CONNECTION INTERCEPTED.
+  [+] You found the backdoor. 
+  [+] FLAG{kush4l_1s_th3_r34l_d34l}
+-->
+<div align="right">
+  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+    <img src="https://api.iconify.design/mdi:ghost.svg?color=%230d1117" width="16" alt="." />
+  </a>
+</div>
 <br>
 <img src="https://capsule-render.vercel.app/api?type=waving&color=9FA9DA&height=100&section=footer" width="100%"/>
