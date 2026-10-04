@@ -14,22 +14,20 @@
     <circle cx="250" cy="110" r="1"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="6s" repeatCount="indefinite"/></circle>
     <circle cx="600" cy="15" r="2"><animate attributeName="opacity" values="0.1;0.6;0.1" dur="4.5s" repeatCount="indefinite"/></circle>
   </g>
-
   <g transform="rotate(15)">
     
     <g opacity="0.5">
-      <animateTransform attributeName="transform" type="translate" from="-100, -20" to="1000, -20" dur="8s" repeatCount="indefinite" />
+      <animateTransform attributeName="transform" type="translate" from="-300, -20" to="1000, -20" dur="8s" repeatCount="indefinite" />
       <line x1="0" y1="0" x2="120" y2="0.1" stroke="url(#meteor)" stroke-width="1.2" stroke-linecap="round"/>
     </g>
 
     <g>
-      <animateTransform attributeName="transform" type="translate" from="-200, 30" to="1100, 30" dur="4s" begin="1s" repeatCount="indefinite" />
+      <animateTransform attributeName="transform" type="translate" from="-700, 30" to="1100, 30" dur="6s" repeatCount="indefinite" />
       <line x1="0" y1="0" x2="200" y2="0.1" stroke="url(#meteor)" stroke-width="6" opacity="0.4" stroke-linecap="round"/>
       <line x1="0" y1="0" x2="200" y2="0.1" stroke="url(#meteor)" stroke-width="2" stroke-linecap="round"/>
     </g>
-
     <g opacity="0.7">
-      <animateTransform attributeName="transform" type="translate" from="-150, 100" to="1000, 100" dur="3.5s" begin="2.5s" repeatCount="indefinite" />
+      <animateTransform attributeName="transform" type="translate" from="-1200, 100" to="1000, 100" dur="5s" repeatCount="indefinite" />
       <line x1="0" y1="0" x2="140" y2="0.1" stroke="url(#meteor)" stroke-width="1.5" stroke-linecap="round"/>
     </g>
     
