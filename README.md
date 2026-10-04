@@ -67,7 +67,7 @@
 -->
 <div align="right">
   <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-    <img src="https://api.iconify.design/mdi:ghost.svg?color=%230d1117" width="16" alt="." />
+    <img src="https://api.iconify.design/mdi:ghost.svg?color=%23161b22" width="16" alt="." />
   </a>
 </div>
 <br>
