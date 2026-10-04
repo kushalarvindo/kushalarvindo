@@ -13,8 +13,9 @@
     <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31hhbckcnadnsrpkfdn2p7dmqiua&cover_image=true&theme=novatorem&bar_color=9FA9DA&background_color=00000000&show_offline=true" width="320" alt="Spotify Now Playing" align="right">
   </a>
 </div>
-
 <br><br><br><br><br><br><br>
+<br>
+
 
 ### ✦ Tech Stack
 
@@ -22,7 +23,7 @@
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=java,kotlin,androidstudio,figma,py,html,css,github,linux,c,vscode&theme=dark&perline=11" alt="Tech Stack" />
   </a>
-  <br>
+  <br><br>
  <!-- <img src="https://api.iconify.design/svg-spinners:bars-scale-fade.svg?color=%239FA9DA" width="20" align="middle" /> -->
 </div>
 
@@ -42,7 +43,6 @@
   <img src="https://streak-stats.demolab.com?user=kushalarvindo&theme=transparent&hide_border=true&ring=9FA9DA&fire=9FA9DA&currStreakNum=9FA9DA&sideNums=9FA9DA&currStreakLabel=9FA9DA&sideLabels=9FA9DA&dates=8F96BF&date_format=j%20M%5B%20Y%5D" width="100%" alt="GitHub Streak">
 </div>
 
-<br>
 <br>
 <div align="center">
   <img src="cyber-grid.svg" width="100%" alt="Data Grid Divider">
