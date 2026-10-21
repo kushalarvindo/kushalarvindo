@@ -1,0 +1,59 @@
+<svg width="320" height="48" viewBox="0 0 320 48" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Smooth gradient fading into the dark background at both edges -->
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9FA9DA" stop-opacity="0" />
+      <stop offset="25%" stop-color="#9FA9DA" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="75%" stop-color="#9FA9DA" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#9FA9DA" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="subWave" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3c4475" stop-opacity="0" />
+      <stop offset="50%" stop-color="#3c4475" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#3c4475" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Harmonic Wave (Deep Tone) -->
+  <path fill="none" stroke="url(#subWave)" stroke-width="1.2" stroke-linecap="round">
+    <animate attributeName="d" 
+      dur="7s" 
+      repeatCount="indefinite"
+      values="
+        M 10,24 Q 85,12 160,24 T 310,24;
+        M 10,24 Q 85,34 160,24 T 310,24;
+        M 10,24 Q 85,12 160,24 T 310,24
+      "/>
+  </path>
+
+  <!-- Mid Harmonic Wave (Resonance) -->
+  <path fill="none" stroke="#5868a8" stroke-width="1" stroke-linecap="round" opacity="0.65">
+    <animate attributeName="d" 
+      dur="5s" 
+      repeatCount="indefinite"
+      values="
+        M 20,24 Q 95,32 160,24 T 300,24;
+        M 20,24 Q 95,14 160,24 T 300,24;
+        M 20,24 Q 95,32 160,24 T 300,24
+      "/>
+  </path>
+
+  <!-- Lead Interstellar Signal Wave (Crisp Sine Pulse) -->
+  <path fill="none" stroke="url(#waveGrad)" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="d" 
+      dur="3.8s" 
+      repeatCount="indefinite"
+      values="
+        M 0,24 C 70,24 100,6 160,24 C 220,42 250,24 320,24;
+        M 0,24 C 70,24 100,40 160,24 C 220,8 250,24 320,24;
+        M 0,24 C 70,24 100,6 160,24 C 220,42 250,24 320,24
+      "/>
+  </path>
+
+  <!-- Center Focal Blip (Faint Pulsar Ping) -->
+  <circle cx="160" cy="24" r="1.5" fill="#ffffff">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="1.9s" repeatCount="indefinite" />
+  </circle>
+</svg>
