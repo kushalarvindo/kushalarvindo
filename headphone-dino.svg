@@ -1,0 +1,66 @@
+<svg width="110" height="90" viewBox="0 0 110 90" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dinoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="45%" stop-color="#9FA9DA" />
+      <stop offset="100%" stop-color="#3c4475" />
+    </linearGradient>
+  </defs>
+
+  <!-- Ground Plane Shadow -->
+  <ellipse cx="52" cy="78" rx="24" ry="3.5" fill="#161b22" />
+
+  <!-- Dino Body (Sitting / Chilling) -->
+  <path d="M 46,45 L 46,62 C 46,71 52,75 58,75 L 64,75 L 68,72 L 62,72 C 57,72 54,68 54,64 L 54,58 L 62,58 L 62,54 L 54,54 L 54,46 Z" 
+        fill="url(#dinoGrad)" />
+
+  <!-- Dino Cute Little Tail -->
+  <path d="M 46,66 C 41,68 34,70 28,68 C 33,65 39,63 46,62 Z" fill="#9FA9DA" />
+
+  <!-- Tiny Arm -->
+  <path d="M 55,54 L 60,54 L 60,57 L 55,57 Z" fill="#ffffff" />
+
+  <!-- Bobbing Head & Headphones Group -->
+  <g>
+    <!-- Smooth head-bobbing animation matching a chilled 80 BPM tempo -->
+    <animateTransform 
+      attributeName="transform" 
+      type="translate" 
+      values="0,0; 0,2.5; 0,0" 
+      dur="1.35s" 
+      repeatCount="indefinite"
+      calcMode="spline" 
+      keySplines="0.4 0 0.2 1; 0.4 0 0.2 1" />
+
+    <!-- Dino Snout & Head -->
+    <path d="M 46,26 L 68,26 L 68,36 L 64,36 L 64,44 L 46,44 Z" fill="url(#dinoGrad)" />
+
+    <!-- Cute Eye -->
+    <rect x="52" y="30" width="2.5" height="2.5" fill="#161b22" />
+
+    <!-- Headphone Band -->
+    <path d="M 42,35 C 42,20 62,20 64,32" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" />
+
+    <!-- Left Ear Cup -->
+    <rect x="40" y="30" width="5" height="11" rx="2.5" fill="#9FA9DA" stroke="#161b22" stroke-width="0.8" />
+    
+    <!-- Right Ear Cup Accent -->
+    <rect x="62" y="30" width="4.5" height="10" rx="2" fill="#5868a8" opacity="0.8" />
+
+    <!-- Floating Sound / Music Ripple 1 -->
+    <g transform="translate(68, 22)">
+      <animateTransform attributeName="transform" type="translate" values="68,26; 74,16; 78,8" dur="2.7s" repeatCount="indefinite" />
+      <path d="M 0,4 C 2,1 4,3 6,0" fill="none" stroke="#9FA9DA" stroke-width="1.2" stroke-linecap="round">
+        <animate attributeName="opacity" values="0; 0.85; 0" dur="2.7s" repeatCount="indefinite" />
+      </path>
+    </g>
+
+    <!-- Floating Sound / Music Ripple 2 -->
+    <g transform="translate(64, 18)">
+      <animateTransform attributeName="transform" type="translate" values="64,22; 68,10; 70,2" dur="2.7s" begin="1.35s" repeatCount="indefinite" />
+      <circle cx="0" cy="0" r="1.2" fill="#ffffff">
+        <animate attributeName="opacity" values="0; 0.9; 0" dur="2.7s" begin="1.35s" repeatCount="indefinite" />
+      </circle>
+    </g>
+  </g>
+</svg>
