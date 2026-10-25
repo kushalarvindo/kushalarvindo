@@ -5,7 +5,8 @@
 <br><br><br><br>
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://api.iconify.design/svg-spinners:pulse-rings-multiple.svg?color=%239FA9DA" width="34" align="left" />
+    <!-- <img src="https://api.iconify.design/svg-spinners:pulse-rings-multiple.svg?color=%239FA9DA" width="34" align="left" /> -->
+    <img src="pulse-spinner.svg" width="34" align="left" />
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=400&size=30&pause=1750&color=9FA9DA&width=420&lines=🌠+Hello+there+👋!;🌌+I'm+Kushal!!;🎆+I+love+to+design!;✨+How+are+you+doing?;☕+Wanna+Grab+a+Drink?" alt="Typing SVG" align="left" />
   </a>
   <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
