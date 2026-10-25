@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=9FA9DA&height=120&section=header" width="100%"/>
+<img src="header.svg" width="100%"/>
 <div align="center">
   <img src="meteor-shower.svg" width="100%" alt="Falling Comets">
 </div>
@@ -6,7 +6,7 @@
 <div align="center">
   <a href="https://git.io/typing-svg">
     <!-- <img src="https://api.iconify.design/svg-spinners:pulse-rings-multiple.svg?color=%239FA9DA" width="34" align="left" /> -->
-    <img src="pulse-spinner.svg" width="36" align="left" />
+    <img src="pulse-spinner.svg" width="38" align="left" />
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=400&size=30&pause=1750&color=9FA9DA&width=420&lines=🌠+Hello+there+👋!;🌌+I'm+Kushal!!;🎆+I+love+to+design!;✨+How+are+you+doing?;☕+Wanna+Grab+a+Drink?" alt="Typing SVG" align="left" />
   </a>
   <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
@@ -22,7 +22,7 @@
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=java,kotlin,androidstudio,figma,py,html,css,github,linux,c,vscode&theme=dark&perline=11" alt="Tech Stack" />
   </a>
-  <br><br>
+  <!-- <br><br> -->
  <!-- <img src="https://api.iconify.design/svg-spinners:bars-scale-fade.svg?color=%239FA9DA" width="20" align="middle" /> -->
 </div>
 
@@ -72,4 +72,4 @@
   </a>
 </div>
 <br>
-<img src="https://capsule-render.vercel.app/api?type=waving&color=9FA9DA&height=100&section=footer" width="100%"/>
+<img src="footer.svg" width="100%"/>
