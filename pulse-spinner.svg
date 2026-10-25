@@ -1,12 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
-  <g fill="none" stroke="#9FA9DA" stroke-width="2">
-    <circle cx="12" cy="12" r="1">
-      <animate attributeName="r" begin="0s" dur="1.5s" values="1; 11" calcMode="spline" keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite" />
-      <animate attributeName="stroke-opacity" begin="0s" dur="1.5s" values="1; 0" calcMode="spline" keySplines="0.3, 0.61, 0.35, 1" repeatCount="indefinite" />
-    </circle>
-    <circle cx="12" cy="12" r="1">
-      <animate attributeName="r" begin="-0.75s" dur="1.5s" values="1; 11" calcMode="spline" keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite" />
-      <animate attributeName="stroke-opacity" begin="-0.75s" dur="1.5s" values="1; 0" calcMode="spline" keySplines="0.3, 0.61, 0.35, 1" repeatCount="indefinite" />
-    </circle>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+	<path d="M0 0h24v24H0z" fill="none" />
+	<circle cx="12" cy="12" r="0" fill="#9fa9da">
+		<animate id="SVGPW9ARccz" fill="freeze" attributeName="r" begin="0;SVGaeu34cWL.end" calcMode="spline" dur="1.2s" keySplines=".52,.6,.25,.99" values="0;11" />
+		<animate fill="freeze" attributeName="opacity" begin="0;SVGaeu34cWL.end" calcMode="spline" dur="1.2s" keySplines=".52,.6,.25,.99" values="1;0" />
+	</circle>
+	<circle cx="12" cy="12" r="0" fill="#9fa9da">
+		<animate id="SVGODvPjeTJ" fill="freeze" attributeName="r" begin="SVGPW9ARccz.begin+0.2s" calcMode="spline" dur="1.2s" keySplines=".52,.6,.25,.99" values="0;11" />
+		<animate fill="freeze" attributeName="opacity" begin="SVGPW9ARccz.begin+0.2s" calcMode="spline" dur="1.2s" keySplines=".52,.6,.25,.99" values="1;0" />
+	</circle>
+	<circle cx="12" cy="12" r="0" fill="#9fa9da">
+		<animate id="SVGaeu34cWL" fill="freeze" attributeName="r" begin="SVGPW9ARccz.begin+0.4s" calcMode="spline" dur="1.2s" keySplines=".52,.6,.25,.99" values="0;11" />
+		<animate fill="freeze" attributeName="opacity" begin="SVGPW9ARccz.begin+0.4s" calcMode="spline" dur="1.2s" keySplines=".52,.6,.25,.99" values="1;0" />
+	</circle>
 </svg>
