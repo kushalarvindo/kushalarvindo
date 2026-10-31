@@ -38,7 +38,7 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kushalarvindo&layout=compact&theme=transparent&hide_border=true&title_color=9FA9DA&text_color=8F96BF&bg_color=00000000" width="48%" alt="Top Languages">
 </div> -->
 <div align="center">
-  <img src="metrics.svg" width="100%" alt="System Telemetry and Language Matrix">
+  <img src="metrics.svg?v=1" width="100%" alt="System Telemetry and Language Matrix">
 </div>
 
 <br>
