@@ -1,85 +1,168 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 195" width="100%" height="100%" font-family="&#39;Segoe UI&#39;, Ubuntu, -apple-system, BlinkMacSystemFont, Roboto, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 430" width="100%" height="100%" font-family="&#39;Segoe UI&#39;, Ubuntu, -apple-system, BlinkMacSystemFont, Roboto, sans-serif">
+  <defs>
+    <!-- Interactive Hover CSS -->
+    <style>
+      .accent, .slider { transition: fill 0.3s ease; }
+      .ring { transition: stroke 0.3s ease, filter 0.3s ease; }
+      .subtext { transition: opacity 0.3s ease; }
 
-  <!-- ================= LEFT: OVERVIEW ================= -->
+      @keyframes dash {
+        to { stroke-dashoffset: 0; }
+      }
+      .rain-v {
+        stroke: #9FA9DA; stroke-opacity: 0.35; stroke-width: 2.5; stroke-linecap: round;
+        stroke-dasharray: 2 12; stroke-dashoffset: 14; animation: dash 0.8s linear infinite;
+        transition: stroke 0.3s, stroke-opacity 0.3s;
+      }
+      .rain-h {
+        stroke: #9FA9DA; stroke-opacity: 0.35; stroke-width: 2.5; stroke-linecap: round;
+        stroke-dasharray: 2 12; stroke-dashoffset: -14; animation: dash 0.8s linear infinite;
+        transition: stroke 0.3s, stroke-opacity 0.3s;
+      }
+
+      /* Hover Triggers: Brighten text & Speed up rain */
+      svg:hover .accent { fill: #E2E4F3; }
+      svg:hover .slider { fill: #E2E4F3; }
+      svg:hover .ring { stroke: #E2E4F3; filter: drop-shadow(0 0 4px rgba(226,228,243,0.35)); }
+      svg:hover .subtext { opacity: 0.95; }
+      svg:hover .rain-v { stroke: #E2E4F3; stroke-opacity: 0.75; animation-duration: 0.25s; }
+      svg:hover .rain-h { stroke: #E2E4F3; stroke-opacity: 0.75; animation-duration: 0.25s; }
+    </style>
+
+    <!-- Fading Edge Masks for Rain Dividers -->
+    <linearGradient id="grad-v-top" gradientUnits="userSpaceOnUse" x1="0" y1="25" x2="0" y2="185">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="15%" stop-color="white" />
+      <stop offset="85%" stop-color="white" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
+    <mask id="mask-v-top"><rect x="0" y="0" width="100%" height="100%" fill="url(#grad-v-top)" /></mask>
+
+    <linearGradient id="grad-h" gradientUnits="userSpaceOnUse" x1="40" y1="0" x2="810" y2="0">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="10%" stop-color="white" />
+      <stop offset="90%" stop-color="white" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
+    <mask id="mask-h"><rect x="0" y="0" width="100%" height="100%" fill="url(#grad-h)" /></mask>
+
+    <linearGradient id="grad-v-bot" gradientUnits="userSpaceOnUse" x1="0" y1="245" x2="0" y2="405">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="15%" stop-color="white" />
+      <stop offset="85%" stop-color="white" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
+    <mask id="mask-v-bot"><rect x="0" y="0" width="100%" height="100%" fill="url(#grad-v-bot)" /></mask>
+  </defs>
+
+  <!-- ================= SECTION 1: OVERVIEW (TOP LEFT) ================= -->
   <g transform="translate(28, 28)">
-    <text x="0" y="0" fill="#9FA9DA" font-size="15" font-weight="700" letter-spacing="0.3">Overview</text>
+    <text x="0" y="0" fill="#9FA9DA" font-size="15" font-weight="700" letter-spacing="0.3" class="accent">Overview</text>
 
     <g transform="translate(0, 38)">
-      <!-- Commits -->
-      <text x="0" y="0" fill="#9FA9DA" font-size="26" font-weight="700">427</text>
+      <text x="0" y="0" fill="#9FA9DA" font-size="26" font-weight="700" class="accent">427</text>
       <text x="0" y="21" fill="#8F96BF" font-size="13" font-weight="400">Commits</text>
 
-      <!-- Repositories -->
-      <text x="125" y="0" fill="#9FA9DA" font-size="26" font-weight="700">18</text>
+      <text x="125" y="0" fill="#9FA9DA" font-size="26" font-weight="700" class="accent">18</text>
       <text x="125" y="21" fill="#8F96BF" font-size="13" font-weight="400">Repositories</text>
 
-      <!-- Pull Requests -->
-      <text x="0" y="72" fill="#9FA9DA" font-size="26" font-weight="700">14</text>
+      <text x="0" y="72" fill="#9FA9DA" font-size="26" font-weight="700" class="accent">14</text>
       <text x="0" y="93" fill="#8F96BF" font-size="13" font-weight="400">Pull Requests</text>
 
-      <!-- Stars Earned -->
-      <text x="125" y="72" fill="#9FA9DA" font-size="26" font-weight="700">26</text>
+      <text x="125" y="72" fill="#9FA9DA" font-size="26" font-weight="700" class="accent">26</text>
       <text x="125" y="93" fill="#8F96BF" font-size="13" font-weight="400">Stars Earned</text>
     </g>
 
-    <!-- Bold Solid Ring -->
     <g transform="translate(312, 75)">
       <circle cx="0" cy="0" r="44" fill="none" stroke="#8F96BF" stroke-opacity="0.18" stroke-width="5" />
-      <circle cx="0" cy="0" r="44" fill="none" stroke="#9FA9DA" stroke-width="5" stroke-linecap="round" stroke-dasharray="276.5" stroke-dashoffset="276.5" transform="rotate(-90)">
+      <circle cx="0" cy="0" r="44" fill="none" stroke="#9FA9DA" stroke-width="5" stroke-linecap="round" stroke-dasharray="276.5" stroke-dashoffset="276.5" transform="rotate(-90)" class="ring">
         <animate attributeName="stroke-dashoffset" from="276.5" to="55" dur="1s" fill="freeze" calcMode="spline" keySplines="0.2, 0, 0, 1" />
       </circle>
-      <text x="0" y="6" fill="#9FA9DA" font-size="24" font-weight="700" text-anchor="middle">A+</text>
+      <text x="0" y="6" fill="#9FA9DA" font-size="24" font-weight="700" text-anchor="middle" class="accent">A+</text>
       <text x="0" y="24" fill="#8F96BF" font-size="11" font-weight="600" letter-spacing="0.8" text-anchor="middle">RANK</text>
     </g>
   </g>
 
-  <!-- ================= CENTER DOTTED RAIN DIVIDER ================= -->
-  <line x1="425" y1="18" x2="425" y2="178" stroke="#9FA9DA" stroke-opacity="0.55" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="2 10">
-    <animate attributeName="stroke-dashoffset" from="12" to="0" dur="0.75s" repeatCount="indefinite" />
-  </line>
-
-  <!-- ================= RIGHT: TOP LANGUAGES ================= -->
+  <!-- ================= SECTION 2: TOP LANGUAGES (TOP RIGHT) ================= -->
   <g transform="translate(465, 28)">
-    <text x="0" y="0" fill="#9FA9DA" font-size="15" font-weight="700" letter-spacing="0.3">Top Languages</text>
+    <text x="0" y="0" fill="#9FA9DA" font-size="15" font-weight="700" letter-spacing="0.3" class="accent">Top Languages</text>
 
-    <!-- Python (46.4% -> 162px) -->
     <g transform="translate(0, 28)">
-      <text x="0" y="0" fill="#9FA9DA" font-size="13.5" font-weight="600">Python</text>
+      <text x="0" y="0" fill="#9FA9DA" font-size="13.5" font-weight="600" class="accent">Python</text>
       <text x="350" y="0" fill="#8F96BF" font-size="12.5" font-weight="600" text-anchor="end">46.4%</text>
       <rect x="0" y="8" width="350" height="6" rx="3" fill="#8F96BF" fill-opacity="0.16" />
-      <rect x="0" y="8" width="0" height="6" rx="3" fill="#9FA9DA">
+      <rect x="0" y="8" width="0" height="6" rx="3" fill="#9FA9DA" class="slider">
         <animate attributeName="width" from="0" to="162" dur="0.9s" begin="0.05s" fill="freeze" calcMode="spline" keySplines="0.2, 0, 0, 1" />
       </rect>
     </g>
 
-    <!-- Kotlin (24.1% -> 84px) -->
     <g transform="translate(0, 62)">
-      <text x="0" y="0" fill="#9FA9DA" font-size="13.5" font-weight="600">Kotlin</text>
+      <text x="0" y="0" fill="#9FA9DA" font-size="13.5" font-weight="600" class="accent">Kotlin</text>
       <text x="350" y="0" fill="#8F96BF" font-size="12.5" font-weight="600" text-anchor="end">24.1%</text>
       <rect x="0" y="8" width="350" height="6" rx="3" fill="#8F96BF" fill-opacity="0.16" />
-      <rect x="0" y="8" width="0" height="6" rx="3" fill="#9FA9DA">
+      <rect x="0" y="8" width="0" height="6" rx="3" fill="#9FA9DA" class="slider">
         <animate attributeName="width" from="0" to="84" dur="0.9s" begin="0.12s" fill="freeze" calcMode="spline" keySplines="0.2, 0, 0, 1" />
       </rect>
     </g>
 
-    <!-- TypeScript (17.8% -> 62px) -->
     <g transform="translate(0, 96)">
-      <text x="0" y="0" fill="#9FA9DA" font-size="13.5" font-weight="600">TypeScript</text>
+      <text x="0" y="0" fill="#9FA9DA" font-size="13.5" font-weight="600" class="accent">TypeScript</text>
       <text x="350" y="0" fill="#8F96BF" font-size="12.5" font-weight="600" text-anchor="end">17.8%</text>
       <rect x="0" y="8" width="350" height="6" rx="3" fill="#8F96BF" fill-opacity="0.16" />
-      <rect x="0" y="8" width="0" height="6" rx="3" fill="#9FA9DA">
+      <rect x="0" y="8" width="0" height="6" rx="3" fill="#9FA9DA" class="slider">
         <animate attributeName="width" from="0" to="62" dur="0.9s" begin="0.19s" fill="freeze" calcMode="spline" keySplines="0.2, 0, 0, 1" />
       </rect>
     </g>
 
-    <!-- C / HTML / CSS (11.7% -> 41px) -->
     <g transform="translate(0, 130)">
-      <text x="0" y="0" fill="#9FA9DA" font-size="13.5" font-weight="600">C / HTML / CSS</text>
+      <text x="0" y="0" fill="#9FA9DA" font-size="13.5" font-weight="600" class="accent">C / HTML / CSS</text>
       <text x="350" y="0" fill="#8F96BF" font-size="12.5" font-weight="600" text-anchor="end">11.7%</text>
       <rect x="0" y="8" width="350" height="6" rx="3" fill="#8F96BF" fill-opacity="0.16" />
-      <rect x="0" y="8" width="0" height="6" rx="3" fill="#9FA9DA">
+      <rect x="0" y="8" width="0" height="6" rx="3" fill="#9FA9DA" class="slider">
         <animate attributeName="width" from="0" to="41" dur="0.9s" begin="0.26s" fill="freeze" calcMode="spline" keySplines="0.2, 0, 0, 1" />
       </rect>
     </g>
+  </g>
+
+  <!-- ================= BENTO GRID RAIN DIVIDERS ================= -->
+  <!-- Top Vertical Line -->
+  <line class="rain-v" x1="425" y1="25" x2="425" y2="185" mask="url(#mask-v-top)" />
+  
+  <!-- Center Horizontal Line -->
+  <line class="rain-h" x1="40" y1="215" x2="810" y2="215" mask="url(#mask-h)" />
+  
+  <!-- Bottom Vertical Lines (Streak Section) -->
+  <line class="rain-v" x1="283" y1="245" x2="283" y2="405" mask="url(#mask-v-bot)" />
+  <line class="rain-v" x1="566" y1="245" x2="566" y2="405" mask="url(#mask-v-bot)" />
+
+  <!-- ================= SECTION 3: STREAK STATS (BOTTOM ROW) ================= -->
+  <g transform="translate(0, 220)">
+    
+    <!-- Total Contributions (Left) -->
+    <g transform="translate(141.5, 0)">
+      <text x="0" y="105" fill="#9FA9DA" font-size="40" font-weight="700" text-anchor="middle" class="accent">427</text>
+      <text x="0" y="142" fill="#8F96BF" font-size="16" font-weight="400" text-anchor="middle">Total Contributions</text>
+      <text x="0" y="165" fill="#8F96BF" font-size="13" opacity="0.65" text-anchor="middle" class="subtext">16 Mar 2021 - Present</text>
+    </g>
+
+    <!-- Current Streak (Center) -->
+    <g transform="translate(425, 0)">
+      <circle cx="0" cy="92" r="48" fill="none" stroke="#8F96BF" stroke-opacity="0.18" stroke-width="5" />
+      <circle cx="0" cy="92" r="48" fill="none" stroke="#9FA9DA" stroke-width="5" stroke-linecap="round" stroke-dasharray="301.6" stroke-dashoffset="301.6" transform="rotate(-90 0 92)" class="ring">
+        <animate attributeName="stroke-dashoffset" from="301.6" to="30" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.2, 0, 0, 1" />
+      </circle>
+      <text x="0" y="107" fill="#9FA9DA" font-size="42" font-weight="700" text-anchor="middle" class="accent">1</text>
+      
+      <text x="0" y="175" fill="#9FA9DA" font-size="17" font-weight="700" text-anchor="middle" class="accent">Current Streak</text>
+      <text x="0" y="198" fill="#8F96BF" font-size="13" opacity="0.65" text-anchor="middle" class="subtext">31 Oct</text>
+    </g>
+
+    <!-- Longest Streak (Right) -->
+    <g transform="translate(708.5, 0)">
+      <text x="0" y="105" fill="#9FA9DA" font-size="40" font-weight="700" text-anchor="middle" class="accent">7</text>
+      <text x="0" y="142" fill="#8F96BF" font-size="16" font-weight="400" text-anchor="middle">Longest Streak</text>
+      <text x="0" y="165" fill="#8F96BF" font-size="13" opacity="0.65" text-anchor="middle" class="subtext">17 Oct - 23 Oct</text>
+    </g>
+
   </g>
 </svg>
