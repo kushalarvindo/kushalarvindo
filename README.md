@@ -33,10 +33,14 @@
 
 ### ✦ Metrics
 
-<div align="center">
+<!-- <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=kushalarvindo&show_icons=true&theme=transparent&hide_border=true&title_color=9FA9DA&text_color=8F96BF&icon_color=9FA9DA&rank_icon=9FA9DA&include_all_commits=true" width="48%" alt="GitHub Stats">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kushalarvindo&layout=compact&theme=transparent&hide_border=true&title_color=9FA9DA&text_color=8F96BF&bg_color=00000000" width="48%" alt="Top Languages">
+</div> -->
+<div align="center">
+  <img src="metrics.svg" width="100%" alt="System Telemetry and Language Matrix">
 </div>
+
 <br>
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=kushalarvindo&theme=transparent&hide_border=true&ring=9FA9DA&fire=9FA9DA&currStreakNum=9FA9DA&sideNums=9FA9DA&currStreakLabel=9FA9DA&sideLabels=9FA9DA&dates=8F96BF&date_format=j%20M%5B%20Y%5D" width="100%" alt="GitHub Streak">
